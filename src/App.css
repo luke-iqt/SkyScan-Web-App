@@ -34,7 +34,6 @@ body {
   position: relative;
   border: solid 4px #fbd300;
   padding: 0px;
-  max-width: 100vw;
  }
 #disclaimer {
   max-width: 500px;
