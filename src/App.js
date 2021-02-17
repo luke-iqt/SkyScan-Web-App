@@ -53,6 +53,7 @@ function App() {
     setModel(model);
     setModelReady(true);
   };
+
   
   const startWebcam = async () => {
     setShowWebcam(true);
@@ -195,16 +196,17 @@ function App() {
       )}
       {showWebcam && (
        <div id="video-box"  >  
-      <video autoPlay playsInline muted id="webcam"  ref={videoRef} />
+      <video autoPlay playsInline muted id="webcam" width="500px" height="500px" ref={videoRef} />
       <canvas
           className="size"
           ref={canvasRef}
+          width="500px"
+          height="500px"
         />
       </div> 
       )}
-      
+   
        <div id="disclaimer"><p>This model was trained on airplanes flying by at around 30,000 feet. It works best at identifying small plane silhouettes.</p></div>
-      
       </div>
       <div id="explainer">
       <div>
