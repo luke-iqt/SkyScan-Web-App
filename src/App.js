@@ -23,7 +23,7 @@ let classList = {
       id: 1,
   }
 }
-const threshold = 0.75;
+const threshold = 0.40;
 
 
 function App() {
