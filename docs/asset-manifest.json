@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SkyScan-Web-App/static/css/main.77b98359.chunk.css",
+    "main.css": "/SkyScan-Web-App/static/css/main.2a390fb9.chunk.css",
     "main.js": "/SkyScan-Web-App/static/js/main.47a2f496.chunk.js",
     "main.js.map": "/SkyScan-Web-App/static/js/main.47a2f496.chunk.js.map",
     "runtime-main.js": "/SkyScan-Web-App/static/js/runtime-main.b1c3c15b.js",
@@ -8,13 +8,13 @@
     "static/js/2.1dd455f6.chunk.js": "/SkyScan-Web-App/static/js/2.1dd455f6.chunk.js",
     "static/js/2.1dd455f6.chunk.js.map": "/SkyScan-Web-App/static/js/2.1dd455f6.chunk.js.map",
     "index.html": "/SkyScan-Web-App/index.html",
-    "static/css/main.77b98359.chunk.css.map": "/SkyScan-Web-App/static/css/main.77b98359.chunk.css.map",
+    "static/css/main.2a390fb9.chunk.css.map": "/SkyScan-Web-App/static/css/main.2a390fb9.chunk.css.map",
     "static/js/2.1dd455f6.chunk.js.LICENSE.txt": "/SkyScan-Web-App/static/js/2.1dd455f6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b1c3c15b.js",
     "static/js/2.1dd455f6.chunk.js",
-    "static/css/main.77b98359.chunk.css",
+    "static/css/main.2a390fb9.chunk.css",
     "static/js/main.47a2f496.chunk.js"
   ]
 }
