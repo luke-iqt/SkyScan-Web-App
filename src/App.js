@@ -29,7 +29,7 @@ const threshold = 0.40;
 function App() {
   const [results, setResults] = useState([]);
   const [model, setModel] = useState(null);
-  const [modelURL, setModelURL] = useState('web_model/model.json');
+  const [modelURL, setModelURL] = useState('web_model3/model.json');
   const [webcam, setWebcam] = useState(null);
   const [showWebcam, setShowWebcam] = useState(false);
   const [objPred, setObjPred] = useState(null);
