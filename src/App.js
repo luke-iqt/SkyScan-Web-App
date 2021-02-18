@@ -23,7 +23,7 @@ let classList = {
       id: 1,
   }
 }
-const threshold = 0.40;
+const threshold = 0.60;
 
 
 function App() {
@@ -108,9 +108,9 @@ function App() {
     ctx.textBaseline = "top";
 
     //Getting predictions
-    const  classes = predictions[1].arraySync()
-    const scores = predictions[3].arraySync()
-    const boxes = predictions[4].arraySync()
+    const  classes = predictions[7].arraySync()
+    const scores = predictions[4].arraySync()
+    const boxes = predictions[6].arraySync()
     const detections = buildDetectedObjects(scores, threshold,
       boxes, classes, classList);
 
