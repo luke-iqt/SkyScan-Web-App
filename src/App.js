@@ -64,7 +64,7 @@ function App() {
   
     const devices = await navigator.mediaDevices.enumerateDevices();
     console.log(devices);
-    const webcamConfig = { resizeWidth: 640, resizeHeight: 640, centerCrop: false, facingMode: 'environment'}
+    const webcamConfig = { resizeWidth: 640, resizeHeight: 640, centerCrop: true, facingMode: 'environment'}
     const webcam = await tf.data.webcam(videoRef.current,webcamConfig);
     setWebcam(webcam);
     if (!modelReady) {
