@@ -29,7 +29,7 @@ const threshold = 0.60;
 function App() {
   const [results, setResults] = useState([]);
   const [model, setModel] = useState(null);
-  const [modelURL, setModelURL] = useState('web_mobilenet_fpn_model/model.json');
+  const [modelURL, setModelURL] = useState('web_mobilenet_model/model.json');
   const [webcam, setWebcam] = useState(null);
   const [showWebcam, setShowWebcam] = useState(false);
   const [objPred, setObjPred] = useState(null);
@@ -64,7 +64,7 @@ function App() {
   
     const devices = await navigator.mediaDevices.enumerateDevices();
     console.log(devices);
-    const webcamConfig = { resizeWidth: 640, resizeHeight: 640, centerCrop: true, facingMode: 'environment'}
+    const webcamConfig = { resizeWidth: 300, resizeHeight: 300, centerCrop: true, facingMode: 'environment'}
     const webcam = await tf.data.webcam(videoRef.current,webcamConfig);
     setWebcam(webcam);
     if (!modelReady) {
@@ -152,12 +152,12 @@ function App() {
 
   const detect = async () => {
     const img = await webcam.capture();
-    let tensor = img.reshape([1,640, 640,3]).toInt(); // change the image size
+    let tensor = img.reshape([1,300, 300,3]).toInt(); // change the image size
 
 
     let offset = tf.scalar(127.5);
-    var  new_frame = img.expandDims().reshape([1, 640, 640, 3]);    
-    var test_frame = tf.expandDims(img.toInt()).reshape([-1, 640, 640, 3]);
+    var  new_frame = img.expandDims().reshape([1, 300, 300, 3]);    
+    var test_frame = tf.expandDims(img.toInt()).reshape([-1, 300, 300, 3]);
 
     const predictions = await model.executeAsync(tensor); 
     renderPredictions(predictions)
