@@ -224,8 +224,6 @@ function App() {
       <canvas
           className="size"
           ref={canvasRef}
-          width="320px"
-          height="320px"
         />
       </div> 
       )}
