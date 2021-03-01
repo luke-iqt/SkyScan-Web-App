@@ -79,10 +79,10 @@ function App() {
     scores[0].forEach((score, i) => {
       if (score > threshold) {
         const bbox = [];
-        const minY = boxes[0][i][0] * video_frame.offsetHeight;
-        const minX = boxes[0][i][1] * video_frame.offsetWidth;
-        const maxY = boxes[0][i][2] * video_frame.offsetHeight;
-        const maxX = boxes[0][i][3] * video_frame.offsetWidth;
+        const minY = boxes[0][i][0] * 300;//video_frame.offsetHeight;
+        const minX = boxes[0][i][1] * 300;//video_frame.offsetWidth;
+        const maxY = boxes[0][i][2] * 300;//video_frame.offsetHeight;
+        const maxX = boxes[0][i][3] * 300;//video_frame.offsetWidth;
         bbox[0] = minX;
         bbox[1] = minY;
         bbox[2] = maxX - minX;
@@ -220,7 +220,7 @@ function App() {
       )}
       {showWebcam && (
        <div id="video-box"  >  
-      <video autoPlay playsInline muted id="webcam" width="320px" height="320px" style={{objectFit:"cover"}} ref={videoRef} />
+      <video autoPlay playsInline muted id="webcam" width="300px" height="300px" style={{objectFit:"cover"}} ref={videoRef} />
       <canvas
           className="size"
           ref={canvasRef}
