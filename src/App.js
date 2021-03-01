@@ -220,12 +220,12 @@ function App() {
       )}
       {showWebcam && (
        <div id="video-box"  >  
-      <video autoPlay playsInline muted id="webcam" width="640px" height="640px" ref={videoRef} />
+      <video autoPlay playsInline muted id="webcam" width="320px" height="320px" style={{objectFit:"cover"}} ref={videoRef} />
       <canvas
           className="size"
           ref={canvasRef}
-          width="640px"
-          height="640px"
+          width="320px"
+          height="320px"
         />
       </div> 
       )}
