@@ -27,6 +27,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  height: 320px !important;
+  width: 320px !important; 
 }
 
  #video-box {
