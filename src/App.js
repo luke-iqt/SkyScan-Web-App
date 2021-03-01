@@ -88,9 +88,13 @@ function App() {
         bbox[2] = maxX - minX;
         bbox[3] = maxY - minY;
         const classNum = classes[0][i] 
+        var label = "Thing";
+        if (classesDir[classNum]) {
+          label = classesDir[classNum].name
+        }
         detectionObjects.push({
           class: classNum,
-          label: classesDir[classNum].name,
+          label: label,
           score: score.toFixed(4),
           bbox: bbox
         })
@@ -108,9 +112,19 @@ function App() {
     ctx.textBaseline = "top";
 
     //Getting predictions
+
+    /*
+    // MobileNet FPN
     const  classes = predictions[2].arraySync() //7
     const scores = predictions[4].arraySync()  //4
     const boxes = predictions[3].arraySync()  //6
+*/
+
+    // MobileNet 
+    const  classes = predictions[7].arraySync() //7
+    const scores = predictions[4].arraySync()  //4
+    const boxes = predictions[6].arraySync()  //6
+
     /*const prediction0 = predictions[0].arraySync()
     const prediction1 = predictions[1].arraySync()
     const prediction2 = predictions[2].arraySync()
@@ -119,6 +133,8 @@ function App() {
     const prediction5 = predictions[5].arraySync()
     const prediction6 = predictions[6].arraySync()
     const prediction7 = predictions[7].arraySync()*/
+    
+    
     const detections = buildDetectedObjects(scores, threshold,
       boxes, classes, classList);
 
