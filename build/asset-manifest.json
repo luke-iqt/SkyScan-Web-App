@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SkyScan-Web-App/static/css/main.ee7b76a6.chunk.css",
-    "main.js": "/SkyScan-Web-App/static/js/main.6bff26da.chunk.js",
-    "main.js.map": "/SkyScan-Web-App/static/js/main.6bff26da.chunk.js.map",
+    "main.js": "/SkyScan-Web-App/static/js/main.daa3695a.chunk.js",
+    "main.js.map": "/SkyScan-Web-App/static/js/main.daa3695a.chunk.js.map",
     "runtime-main.js": "/SkyScan-Web-App/static/js/runtime-main.b1c3c15b.js",
     "runtime-main.js.map": "/SkyScan-Web-App/static/js/runtime-main.b1c3c15b.js.map",
     "static/js/2.1dd455f6.chunk.js": "/SkyScan-Web-App/static/js/2.1dd455f6.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.b1c3c15b.js",
     "static/js/2.1dd455f6.chunk.js",
     "static/css/main.ee7b76a6.chunk.css",
-    "static/js/main.6bff26da.chunk.js"
+    "static/js/main.daa3695a.chunk.js"
   ]
 }

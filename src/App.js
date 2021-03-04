@@ -29,7 +29,7 @@ const threshold = 0.60;
 function App() {
   const [results, setResults] = useState([]);
   const [model, setModel] = useState(null);
-  const [modelURL, setModelURL] = useState('web_mobilenet_model/model.json');
+  const [modelURL, setModelURL] = useState('web_mobilenet_balanced_model/model.json');
   const [webcam, setWebcam] = useState(null);
   const [showWebcam, setShowWebcam] = useState(false);
   const [objPred, setObjPred] = useState(null);
