@@ -121,20 +121,20 @@ function App() {
 */
 
     // MobileNet 
-    const  classes = predictions[7].arraySync() //7
-    const scores = predictions[4].arraySync()  //4
-    const boxes = predictions[6].arraySync()  //6
-
-    /*const prediction0 = predictions[0].arraySync()
+    const  classes = predictions[0].arraySync() //7
+    const scores = predictions[1].arraySync()  //1 //4
+    const boxes = predictions[4].arraySync()  //6
+/*
+    const prediction0 = predictions[0].arraySync()
     const prediction1 = predictions[1].arraySync()
     const prediction2 = predictions[2].arraySync()
     const prediction3 = predictions[3].arraySync()
     const prediction4 = predictions[4].arraySync()
     const prediction5 = predictions[5].arraySync()
     const prediction6 = predictions[6].arraySync()
-    const prediction7 = predictions[7].arraySync()*/
+    const prediction7 = predictions[7].arraySync()
     
-    
+    */
     const detections = buildDetectedObjects(scores, threshold,
       boxes, classes, classList);
 
